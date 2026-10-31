@@ -33,3 +33,10 @@ onUnmounted(unwatch);
 		</TooltipPortal>
 	</TooltipRoot>
 </template>
+
+<style lang="scss">
+/* The content is force-mounted, so the popper wrapper outlives a closed tooltip. It must not catch clicks meant for the element underneath. */
+[data-reka-popper-content-wrapper] {
+	pointer-events: none;
+}
+</style>
