@@ -1,0 +1,12 @@
+{
+	"name": "directus-e2e",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"test": "playwright test"
+	},
+	"devDependencies": {
+		"@currents/playwright": "2.6.0",
+		"@playwright/test": "1.56.1"
+	}
+}
